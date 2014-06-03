@@ -17,7 +17,8 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
     url(r'^ABSearchApp/', include('ABSearchApp.urls')),
-     url(r'^admin/', include(admin.site.urls)),  # added to allow admin interface
+    url(r'^captcha/', include('captcha.urls')),
+    url(r'^admin/', include(admin.site.urls)),  # added to allow admin interface
 )
 
 

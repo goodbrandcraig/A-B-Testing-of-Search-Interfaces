@@ -138,7 +138,14 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'ABSearchApp',
+    'captcha',
 )
+
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
+CAPTCHA_FONT_SIZE = 40
+CAPTCHA_BACKGROUND_COLOUR = 'red'
+CAPTHCA_FOREGROUND_COLOUR = '#000000'
+CAPTCHA_LETTER_ROTATION = None
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 

@@ -1,13 +1,27 @@
-<!DOCTYPE html>
+{% extends 'ABSearchApp/base.html' %}
 {% load static %}
 <html>
+
 <head>
     <title>AB Search</title>
 </head>
-<body>
-    <img src ="{% static 'magnifying-glass.jpg' %}" alt = "Magnifying Glass" height="100" width="120" />
-    <h1>AB Search</h1>
-    Placeholder for the rest of the main page
+
+{% block body_block %}
+<div class="span12 pagination-centered">
+    <div class="hero-unit">
+        <img src ="{% static 'magnifying-glass.jpg' %}" alt = "Magnifying Glass" height="100" width="120" />
+        <h2>AB Search</h2>
+        Placeholder for the rest of the main page
+        <p>search bar will go here</p>
+         <img src ="{% static 'Glasgow Uni Logo.jpg' %}" alt = "School of Computing Science Logo
+         " height="200" width="400" />
+        <p>Project Supervisor: <a href ="mailto:Leif.Azzopardi@glasgow.ac.uk">
+            Leif.Azzopardi@glasgow.ac.uk</a></p>
+    </div>
+</div>
+{% endblock %}
+
 
 </body>
+
 </html>
